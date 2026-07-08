@@ -29,7 +29,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 - **Chat IA / Assistente IA** — interfaces de conversa com a IA. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
 
 ## Engajamento e comunidade
-- **Gamificação, Medalhas, Loja de prêmios, Campanhas** — pontos, badges, recompensas. → [docs/gamificacao-e-loja.md](docs/gamificacao-e-loja.md)
+- **Gamificação, Campanhas e Loja de prêmios** — pontos, metas, catálogo de prêmios (+ gift cards Incentivale), importação de pontos, resgate, dashboard do aluno e painel do admin. → [docs/gamificacao-e-loja.md](docs/gamificacao-e-loja.md)
 - **Rede social, Notícias, Enquetes, Avisos, Banners** — comunicação e feed. → [docs/comunicacao-social.md](docs/comunicacao-social.md)
 - **Gestão de ideias** — colaboradores propõem e votam ideias. → [docs/gestao-de-ideias.md](docs/gestao-de-ideias.md)
 

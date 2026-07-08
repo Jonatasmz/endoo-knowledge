@@ -9,7 +9,7 @@ Leia o documento certo conforme o que você precisa. Cada um é autossuficiente.
 | [docs/endoia-recursos.md](docs/endoia-recursos.md) | Todos os recursos de IA: Central de Dúvidas, Mapa e Lacunas de Conhecimento, Auditoria Didática, Microlearning, geração de imagens. |
 | [docs/matriz-treinamento.md](docs/matriz-treinamento.md) | O módulo de Matriz de Treinamento: requisitos por cargo, validade, cobertura, prontidão de turmas. |
 | [docs/acesso-e-matriculas.md](docs/acesso-e-matriculas.md) | Como uma pessoa entra na plataforma e ganha acesso a um curso (turma, acesso direto, campanha). |
-| [docs/gamificacao-e-loja.md](docs/gamificacao-e-loja.md) | Pontos, loja de prêmios (resgate por pontos) e campanhas. |
+| [docs/gamificacao-e-loja.md](docs/gamificacao-e-loja.md) | Pontos, metas, campanhas, loja de prêmios (+ gift cards Incentivale), importação de pontos, resgate, dashboard do aluno e painel do admin. |
 
 ## A escrever (recursos da plataforma ainda não documentados aqui)
 - `docs/cursos-e-lms.md` — player de curso, capítulos, conteúdos, provas.
