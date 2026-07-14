@@ -81,10 +81,27 @@ Existe em dois lugares:
 - **No painel, como item próprio ("Insights (IA)")** — chat livre sobre os dados da plataforma.
 - **Em cada relatório gerado** — botão que abre o chat **já com aquele relatório como contexto**.
 
-- **Mostra:** resposta em texto + **visualização automática** (tabela, barras, linha, rosca ou KPI), a consulta usada para chegar ao número, e sugestões de perguntas iniciais.
-- **Exporta:** CSV dos dados e PNG do gráfico.
-- **Extras:** feedback 👍/👎 na resposta, cópia e histórico de conversas.
-- **Serve para:** interpretar o relatório sem abrir o Excel — pergunta em português, recebe a análise e o gráfico.
+### Como responde
+Além do texto, a IA **monta a visualização sozinha**. São 5 formatos de saída:
+
+| Formato | Quando é usado |
+|---|---|
+| **Tabela** | O resultado tem várias linhas e colunas |
+| **Gráfico de barras** | Comparação entre categorias (ex: aderência por unidade) |
+| **Gráfico de linha** | Evolução ao longo do tempo |
+| **Gráfico de rosca (doughnut)** | Composição / participação percentual |
+| **Valor único (KPI)** | A resposta é um número só (ex: "quantos concluíram?") |
+
+**A escolha do formato é automática:** a IA define qual visualização cabe na pergunta e o sistema monta o gráfico sozinho — ele identifica qual coluna é o rótulo e quais são numéricas. Se houver **mais de uma coluna numérica**, o gráfico de barras vem com **várias séries** (uma por coluna).
+
+### O que dá para fazer com a resposta
+- **Baixar PNG** — salva o gráfico como imagem.
+- **Exportar CSV** — baixa os dados por trás do gráfico.
+- **Ver a consulta usada** — mostra como a IA chegou àquele número (transparência).
+- **Feedback 👍/👎** — avalia a resposta.
+- **Copiar** o conteúdo e retomar o **histórico** de conversas.
+
+**Serve para:** interpretar o relatório sem abrir o Excel — pergunta em português, recebe a análise, o gráfico pronto e os dados para exportar.
 
 ## Relatórios Rápidos
 - **Mostra:** grade de relatórios **criados pelo próprio usuário via IA** (ele descreve o que quer, ex: "aderência por unidade", e a IA monta um relatório parametrizável e reutilizável). Ao abrir, escolhe o período e gera; o resultado vem em tabela, barras, rosca ou insights.
