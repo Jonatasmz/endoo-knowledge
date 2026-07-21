@@ -254,18 +254,47 @@ Um **participante** é um aluno inscrito numa turma. Para cada um, a plataforma 
 Instrutores podem **importar participantes** em massa por planilha, sem inscrição manual.
 
 ## Como o aluno aprende
-Ao entrar no curso, o aluno vê os capítulos em ordem; ao abrir um capítulo, consome as tarefas na sequência. Cada tarefa é marcada como concluída (manual ou automaticamente, conforme o tipo). A plataforma registra tudo em tempo real: o que concluiu, quanto tempo levou, respostas de quiz.
+Ao entrar no curso, o aluno vê os capítulos em ordem; ao abrir um capítulo, consome as tarefas na sequência. Cada tarefa é marcada como concluída (manual ou automaticamente, conforme o tipo).
+
+### Controle de ritmo
+- **Tempo mínimo por atividade:** cada tarefa pode exigir um tempo mínimo de permanência. Enquanto ele não é cumprido, aparece uma contagem regressiva e o botão de avançar fica bloqueado — o aluno não pula o conteúdo.
+- **Liberação sequencial:** a próxima tarefa só é habilitada quando a anterior é concluída.
+- **Configurações de atenção:** o curso pode exibir o cronômetro durante a aula e pausar o vídeo quando o aluno troca de aba.
+
+### O que fica registrado
+A plataforma guarda, por aluno:
+- **Tempo gasto em cada tarefa.**
+- **Cada conteúdo concluído, com data e hora.**
+- **Progresso (%) e nota** no curso.
+- **Respostas e tentativas** das avaliações.
+- **Navegação** (quais páginas acessou e quando).
+
+Esse histórico é mantido ao longo do tempo — não há expurgo automático de registros —, o que permite comprovar a realização do treinamento em auditorias.
 
 ## Avaliações e provas
 Existe um banco de avaliações — questionários parametrizáveis que podem virar provas obrigatórias do curso. Uma prova tem:
-- **Questões** — múltipla escolha, verdadeiro/falso, dissertativa, associação, ordenação.
-- **Nota mínima** de aprovação.
+- **Questões de múltipla escolha** (uma alternativa correta), corrigidas automaticamente.
+- **Nota mínima** de aprovação, que define aprovado/reprovado.
 - **Versões** (ex: prova original e reteste).
 
-Questões objetivas são corrigidas automaticamente; dissertativas aguardam revisão manual. Quem reprova pode refazer conforme o instrutor permitir.
+Cada tentativa é registrada por aluno, com **as respostas dadas, a nota e a data/hora**. Quem reprova pode refazer conforme o instrutor permitir.
+
+Para avaliação **prática ou situacional**, além da prova objetiva o curso pode usar tarefas de:
+- **Envio de arquivo** — o aluno entrega um trabalho.
+- **Envio de vídeo para avaliação da banca** — o aluno grava e envia; avaliadores analisam.
+- **Atividades dos cursos interativos** — os cursos criados no editor visual têm quizzes e avaliações próprios, com registro de tentativas.
 
 ## Certificações
-Cursos podem ter um **certificado** (modelo personalizável) emitido em PDF quando o aluno conclui com aprovação. O certificado traz o nome do aluno, o curso, a data e a validação da plataforma. O aluno baixa o PDF ao finalizar.
+Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo.
+
+**Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão e carga horária.
+
+**Autenticidade e verificação:**
+- Cada emissão gera um **código único** de validação.
+- O certificado traz um **QR Code** que leva à página de verificação.
+- A **verificação é pública** — qualquer pessoa (auditor, empresa contratante) confere a autenticidade **sem precisar de login**, e vê se o certificado é válido, de quem é, de qual curso, a carga horária e a data.
+- Os dados ficam **congelados na emissão** (snapshot): mesmo que o curso mude depois, o certificado continua refletindo o que foi cursado.
+- O administrador pode **revogar** um certificado; a revogação fica registrada com data e responsável, e a página de verificação passa a mostrar que ele não é mais válido.
 
 ## Recursos adicionais
 - **Avaliação do curso:** o aluno dá nota em estrelas (1–5) e deixa feedback.
@@ -1211,7 +1240,15 @@ Menu de **atalhos** para documentos, formulários e sistemas externos. Organizad
 Tela que mostra as notificações enviadas aos usuários (prazos, confirmações, alertas) e solicitações de aprovação pendentes (ex: mudança de hierarquia, autorização de turma). Filtrável por tipo, status, data e filial — útil para auditoria das comunicações.
 
 ## Logs e auditoria
-Histórico de **todas as ações** na plataforma (criação, edição, exclusão de cursos, usuários, etc.) — essencial para compliance e rastreabilidade. Cada registro mostra a ação, o que foi alterado, quem fez e quando. Permite filtrar por tipo de ação/registro/usuário e buscar por termo. Algumas ações podem ser **revertidas** (ex: reativar um usuário excluído), o que gera um novo registro auditando a reversão.
+Histórico das ações na plataforma — essencial para compliance e rastreabilidade.
+
+**O que cada registro guarda:** a ação (criação, exclusão, restauração), qual item foi afetado, **os valores antes e depois**, quem fez, a data/hora, o **endereço IP** e o **navegador/dispositivo** usado.
+
+**O que é auditado:** usuários, cursos, turmas, filiais, arquivos e grupos de permissão.
+
+**Como usar:** filtra por tipo de ação, tipo de registro e usuário responsável, com busca por termo e paginação. Algumas ações podem ser **revertidas** (ex: reativar um usuário excluído), o que gera um novo registro auditando a própria reversão.
+
+**Retenção:** os registros são mantidos ao longo do tempo — não há expurgo automático.
 
 ---
 *Última revisão: jun/2026.*

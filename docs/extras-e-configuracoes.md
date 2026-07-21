@@ -18,7 +18,15 @@ Menu de **atalhos** para documentos, formulários e sistemas externos. Organizad
 Tela que mostra as notificações enviadas aos usuários (prazos, confirmações, alertas) e solicitações de aprovação pendentes (ex: mudança de hierarquia, autorização de turma). Filtrável por tipo, status, data e filial — útil para auditoria das comunicações.
 
 ## Logs e auditoria
-Histórico de **todas as ações** na plataforma (criação, edição, exclusão de cursos, usuários, etc.) — essencial para compliance e rastreabilidade. Cada registro mostra a ação, o que foi alterado, quem fez e quando. Permite filtrar por tipo de ação/registro/usuário e buscar por termo. Algumas ações podem ser **revertidas** (ex: reativar um usuário excluído), o que gera um novo registro auditando a reversão.
+Histórico das ações na plataforma — essencial para compliance e rastreabilidade.
+
+**O que cada registro guarda:** a ação (criação, exclusão, restauração), qual item foi afetado, **os valores antes e depois**, quem fez, a data/hora, o **endereço IP** e o **navegador/dispositivo** usado.
+
+**O que é auditado:** usuários, cursos, turmas, filiais, arquivos e grupos de permissão.
+
+**Como usar:** filtra por tipo de ação, tipo de registro e usuário responsável, com busca por termo e paginação. Algumas ações podem ser **revertidas** (ex: reativar um usuário excluído), o que gera um novo registro auditando a própria reversão.
+
+**Retenção:** os registros são mantidos ao longo do tempo — não há expurgo automático.
 
 ---
 *Última revisão: jun/2026.*
