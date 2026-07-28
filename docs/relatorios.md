@@ -228,7 +228,7 @@ Abertos de dentro do item, não pelo menu:
 ## Registro de Logs
 Auditoria das ações na plataforma — ver `extras-e-configuracoes.md`.
 
-## Mapa do Conhecimento e Lacunas (Método PAH)
+## Mapa do Conhecimento e Lacunas (Programa de Aquisição de Habilidades)
 Análise de conhecimento por IA — ver `endoia-recursos.md`.
 
 ---

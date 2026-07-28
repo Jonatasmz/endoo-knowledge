@@ -25,7 +25,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 
 ## Inteligência Artificial
 - **Recursos de IA (EndoIA)** — Central de Dúvidas, Auditoria Didática, geração de imagens. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
-- **Método PAH** — suíte de análise de conhecimento: Mapa do Conhecimento, Lacunas, Área do Aluno, Área do Saber e Pílulas. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
+- **Programa de Aquisição de Habilidades** — suíte de análise de conhecimento: Mapa do Conhecimento, Lacunas, Área do Aluno, Área do Saber e Pílulas. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
 - **Chat IA / Assistente IA** — interfaces de conversa com a IA. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
 
 ## Engajamento e comunidade

@@ -4,7 +4,7 @@
 
 A IA da plataforma roda num serviço próprio que orquestra "agentes" especializados (cada um com um modelo e um propósito). Os recursos abaixo são os que existem e funcionam hoje.
 
-> **Método PAH** é o nome comercial da suíte de análise de conhecimento por IA. No menu, ele reúne cinco áreas: **Mapa do Conhecimento**, **Lacunas de Conhecimento**, **Área do Aluno** (alunos com maiores lacunas), **Área do Saber** (tópicos/questões mais problemáticos) e **Pílulas** (microlearning de reforço). Cada uma é detalhada abaixo.
+> **Programa de Aquisição de Habilidades** é o nome comercial da suíte de análise de conhecimento por IA. No menu, ele reúne cinco áreas: **Mapa do Conhecimento**, **Lacunas de Conhecimento**, **Área do Aluno** (alunos com maiores lacunas), **Área do Saber** (tópicos/questões mais problemáticos) e **Pílulas** (microlearning de reforço). Cada uma é detalhada abaixo.
 
 ## 1. Assistente de criação de cursos
 - **Quem usa:** instrutores / criadores de conteúdo.

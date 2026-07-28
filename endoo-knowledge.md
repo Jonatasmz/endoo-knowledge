@@ -59,7 +59,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 
 ## Inteligência Artificial
 - **Recursos de IA (EndoIA)** — Central de Dúvidas, Auditoria Didática, geração de imagens. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
-- **Método PAH** — suíte de análise de conhecimento: Mapa do Conhecimento, Lacunas, Área do Aluno, Área do Saber e Pílulas. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
+- **Programa de Aquisição de Habilidades** — suíte de análise de conhecimento: Mapa do Conhecimento, Lacunas, Área do Aluno, Área do Saber e Pílulas. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
 - **Chat IA / Assistente IA** — interfaces de conversa com a IA. → [docs/endoia-recursos.md](docs/endoia-recursos.md)
 
 ## Engajamento e comunidade
@@ -438,7 +438,7 @@ A aplicação do requisito é **automática por filial**: ao acessar, o sistema 
 
 A IA da plataforma roda num serviço próprio que orquestra "agentes" especializados (cada um com um modelo e um propósito). Os recursos abaixo são os que existem e funcionam hoje.
 
-> **Método PAH** é o nome comercial da suíte de análise de conhecimento por IA. No menu, ele reúne cinco áreas: **Mapa do Conhecimento**, **Lacunas de Conhecimento**, **Área do Aluno** (alunos com maiores lacunas), **Área do Saber** (tópicos/questões mais problemáticos) e **Pílulas** (microlearning de reforço). Cada uma é detalhada abaixo.
+> **Programa de Aquisição de Habilidades** é o nome comercial da suíte de análise de conhecimento por IA. No menu, ele reúne cinco áreas: **Mapa do Conhecimento**, **Lacunas de Conhecimento**, **Área do Aluno** (alunos com maiores lacunas), **Área do Saber** (tópicos/questões mais problemáticos) e **Pílulas** (microlearning de reforço). Cada uma é detalhada abaixo.
 
 ## 1. Assistente de criação de cursos
 - **Quem usa:** instrutores / criadores de conteúdo.
@@ -983,7 +983,7 @@ Abertos de dentro do item, não pelo menu:
 ## Registro de Logs
 Auditoria das ações na plataforma — ver `extras-e-configuracoes.md`.
 
-## Mapa do Conhecimento e Lacunas (Método PAH)
+## Mapa do Conhecimento e Lacunas (Programa de Aquisição de Habilidades)
 Análise de conhecimento por IA — ver `endoia-recursos.md`.
 
 ---
