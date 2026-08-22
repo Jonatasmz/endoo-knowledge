@@ -164,6 +164,9 @@ Vincular **cursos/turmas/capacitações** a filiais permite treinamentos customi
 ## Login e sessão
 O usuário entra com usuário/senha (ou login corporativo). Validado, recebe um token; a plataforma carrega seu grupo, permissões e filiais. Cada requisição seguinte valida o token. As sessões expiram por segurança e exigem novo login.
 
+## Inativação automática
+A plataforma pode **inativar automaticamente** usuários que ficam muito tempo sem acessar (ex: 120 dias), com **aviso por e-mail** antes/na inativação. Mantém a base limpa e alinhada ao licenciamento por usuário, sem apagar o histórico (o usuário fica inativo, não excluído). Os critérios são configuráveis conforme o projeto.
+
 ---
 *Última revisão: jun/2026.*
 
@@ -243,6 +246,7 @@ Um curso é oferecido em **turmas** — grupos de alunos com:
 - **Período** (data de início e fim).
 - **Limite de vagas**.
 - **Filiais** a que se aplica (controla a visibilidade).
+- **Situação da turma**, incluindo **Cancelada** — turmas canceladas são desconsideradas nos relatórios e dashboards (não contam na aderência/desempenho).
 
 Um **participante** é um aluno inscrito numa turma. Para cada um, a plataforma registra:
 - **Progresso** (0–100%).
@@ -349,6 +353,9 @@ Uma **jornada** é a versão visual e gamificada, voltada a engajamento (não a 
 ## Gestão
 Administradores criam/editam essas estruturas, definem a ordem dos cursos, datas e vagas, importam participantes em lote, e acompanham relatórios: quantos estão em cada trilha, taxa de conclusão, tempo médio, desempenho e abandono.
 
+## Criação automática de turmas
+Para os cursos que compõem a trilha, a plataforma consegue **criar as turmas necessárias automaticamente, em um clique** — sem o admin abrir curso por curso. Agiliza a preparação de uma trilha grande, garantindo que todos os cursos fiquem disponíveis para os participantes.
+
 ---
 *Última revisão: jun/2026.*
 
@@ -448,6 +455,7 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Onde:** dentro do player de curso (widget lateral).
 - **Quem usa:** alunos durante o curso.
 - **O que faz:** o aluno pergunta sobre o curso; a IA busca semanticamente em três fontes (conteúdo do curso, biblioteca e wiki) e gera uma resposta contextualizada. Toda interação é registrada para análise posterior.
+- **Escopo da busca:** a tela indica em que material a resposta se baseou e permite **ampliar a busca a todos os materiais** (não só o curso atual).
 
 ## 3. Relatório da Central de Dúvidas
 - **Quem usa:** admins / coordenadores.
@@ -480,6 +488,11 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Onde:** dentro do assistente/editor de criação de cursos.
 - **Quem usa:** instrutores.
 - **O que faz:** gera imagens sob medida para uso nos cursos. Modelo atual: **gpt-image-2** (OpenAI).
+
+## 10. Resumo do curso por IA
+- **Onde:** painel do curso.
+- **Quem usa:** professores / coordenadores.
+- **O que faz:** com um clique, a IA lê o conteúdo do curso e gera um **resumo** dele — útil para descrição, comunicação e revisão. Diferente do "O que você irá aprender" (que lista tópicos): aqui é um resumo do conteúdo.
 
 ## Infraestrutura compartilhada (resumo)
 - **Modelos:** OpenAI (GPT para texto, gpt-image-2 para imagem), Gemini e Claude — escolhidos por agente e configuráveis sem nova publicação.
@@ -770,7 +783,7 @@ Além desses:
 - **Relatórios Rápidos** — relatórios que o próprio usuário cria descrevendo o que quer para a IA.
 - **Insights por IA** — análise conversacional, inclusive **em cima de um relatório já gerado**.
 
-> Nota: vários relatórios cruzam os dados pelos **níveis da hierarquia da empresa** (unidade, área, produto, célula — os nomes variam por cliente, pois a hierarquia é configurável). Alguns dashboards indicam na tela que os dados têm **defasagem de consolidação** (tipicamente D+3).
+> Nota: vários relatórios cruzam os dados pelos **níveis da hierarquia da empresa** (unidade, área, produto, célula — os nomes variam por cliente, pois a hierarquia é configurável). Alguns dashboards indicam na tela que os dados têm **defasagem de consolidação** (tipicamente D+3). Turmas com situação **Cancelada** são desconsideradas nos relatórios/dashboards.
 
 ---
 
@@ -823,6 +836,8 @@ Enquanto o menu entrega **dashboards** (gráficos na tela), o Painel de Relatór
 - **Acessos por dia e hierarquia** — acessos diários por área.
 - **Acessos em páginas** — quais páginas foram acessadas.
 - **Lista de presença** — presença registrada.
+- **Social** — engajamento na rede social (posts, interações).
+- **Usuários com permissões individuais** — lista quem tem permissões concedidas individualmente (fora dos grupos), para revisão de acessos.
 
 ### Catálogo — Questionários *(escolhe-se um formulário)*
 - **Avaliação de Reação** — respostas da avaliação de reação.

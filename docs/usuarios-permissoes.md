@@ -28,5 +28,8 @@ Vincular **cursos/turmas/capacitações** a filiais permite treinamentos customi
 ## Login e sessão
 O usuário entra com usuário/senha (ou login corporativo). Validado, recebe um token; a plataforma carrega seu grupo, permissões e filiais. Cada requisição seguinte valida o token. As sessões expiram por segurança e exigem novo login.
 
+## Inativação automática
+A plataforma pode **inativar automaticamente** usuários que ficam muito tempo sem acessar (ex: 120 dias), com **aviso por e-mail** antes/na inativação. Mantém a base limpa e alinhada ao licenciamento por usuário, sem apagar o histórico (o usuário fica inativo, não excluído). Os critérios são configuráveis conforme o projeto.
+
 ---
 *Última revisão: jun/2026.*

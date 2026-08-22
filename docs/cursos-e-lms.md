@@ -33,6 +33,7 @@ Um curso é oferecido em **turmas** — grupos de alunos com:
 - **Período** (data de início e fim).
 - **Limite de vagas**.
 - **Filiais** a que se aplica (controla a visibilidade).
+- **Situação da turma**, incluindo **Cancelada** — turmas canceladas são desconsideradas nos relatórios e dashboards (não contam na aderência/desempenho).
 
 Um **participante** é um aluno inscrito numa turma. Para cada um, a plataforma registra:
 - **Progresso** (0–100%).

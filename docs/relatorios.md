@@ -15,7 +15,7 @@ Além desses:
 - **Relatórios Rápidos** — relatórios que o próprio usuário cria descrevendo o que quer para a IA.
 - **Insights por IA** — análise conversacional, inclusive **em cima de um relatório já gerado**.
 
-> Nota: vários relatórios cruzam os dados pelos **níveis da hierarquia da empresa** (unidade, área, produto, célula — os nomes variam por cliente, pois a hierarquia é configurável). Alguns dashboards indicam na tela que os dados têm **defasagem de consolidação** (tipicamente D+3).
+> Nota: vários relatórios cruzam os dados pelos **níveis da hierarquia da empresa** (unidade, área, produto, célula — os nomes variam por cliente, pois a hierarquia é configurável). Alguns dashboards indicam na tela que os dados têm **defasagem de consolidação** (tipicamente D+3). Turmas com situação **Cancelada** são desconsideradas nos relatórios/dashboards.
 
 ---
 
@@ -68,6 +68,8 @@ Enquanto o menu entrega **dashboards** (gráficos na tela), o Painel de Relatór
 - **Acessos por dia e hierarquia** — acessos diários por área.
 - **Acessos em páginas** — quais páginas foram acessadas.
 - **Lista de presença** — presença registrada.
+- **Social** — engajamento na rede social (posts, interações).
+- **Usuários com permissões individuais** — lista quem tem permissões concedidas individualmente (fora dos grupos), para revisão de acessos.
 
 ### Catálogo — Questionários *(escolhe-se um formulário)*
 - **Avaliação de Reação** — respostas da avaliação de reação.

@@ -14,6 +14,7 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Onde:** dentro do player de curso (widget lateral).
 - **Quem usa:** alunos durante o curso.
 - **O que faz:** o aluno pergunta sobre o curso; a IA busca semanticamente em três fontes (conteúdo do curso, biblioteca e wiki) e gera uma resposta contextualizada. Toda interação é registrada para análise posterior.
+- **Escopo da busca:** a tela indica em que material a resposta se baseou e permite **ampliar a busca a todos os materiais** (não só o curso atual).
 
 ## 3. Relatório da Central de Dúvidas
 - **Quem usa:** admins / coordenadores.
@@ -46,6 +47,11 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Onde:** dentro do assistente/editor de criação de cursos.
 - **Quem usa:** instrutores.
 - **O que faz:** gera imagens sob medida para uso nos cursos. Modelo atual: **gpt-image-2** (OpenAI).
+
+## 10. Resumo do curso por IA
+- **Onde:** painel do curso.
+- **Quem usa:** professores / coordenadores.
+- **O que faz:** com um clique, a IA lê o conteúdo do curso e gera um **resumo** dele — útil para descrição, comunicação e revisão. Diferente do "O que você irá aprender" (que lista tópicos): aqui é um resumo do conteúdo.
 
 ## Infraestrutura compartilhada (resumo)
 - **Modelos:** OpenAI (GPT para texto, gpt-image-2 para imagem), Gemini e Claude — escolhidos por agente e configuráveis sem nova publicação.
