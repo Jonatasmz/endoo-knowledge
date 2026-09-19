@@ -23,7 +23,7 @@ Organizado por funcionalidade:
 
 **Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário).
 
-**IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos.
+**IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos. O admin também escolhe **em quais áreas da plataforma a IA fica habilitada**; o **saldo de tokens de IA** aparece para o usuário como um anel em volta do avatar, e recursos adicionais aparecem numa vitrine conforme o plano.
 
 **Integração com APIs** — vincula remetente de e-mail, conecta WhatsApp e configura integrações.
 

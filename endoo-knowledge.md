@@ -12,23 +12,24 @@
 5. Cursos e LMS
 6. Trilhas e Jornadas de Aprendizado
 7. Construtor de Cursos com IA + Editor Habilize
-8. Matriz de Treinamento
-9. Recursos de Inteligência Artificial (EndoIA)
-10. Gamificação, Campanhas e Loja de Prêmios
-11. Comunicação e Social
-12. Base de Conhecimento (Wiki)
-13. Formulários (NiceForms)
-14. Tours Guiados de Onboarding
-15. Relatórios e Analytics
-16. Eventos, Presença e Calendário
-17. Biblioteca (Repositório de Arquivos)
-18. Central de Administração (Gerenciamento)
-19. E-mail Marketing
-20. Gestão de Ideias
-21. Busca Global
-22. Extras e Configurações
-23. Aplicativo Mobile
-24. Painel Administrativo e Onboarding de Clientes
+8. Criador com IA (/criar)
+9. Matriz de Treinamento
+10. Recursos de Inteligência Artificial (EndoIA)
+11. Gamificação, Campanhas e Loja de Prêmios
+12. Comunicação e Social
+13. Base de Conhecimento (Wiki)
+14. Formulários (NiceForms)
+15. Tours Guiados de Onboarding
+16. Relatórios e Analytics
+17. Eventos, Presença e Calendário
+18. Biblioteca (Repositório de Arquivos)
+19. Central de Administração (Gerenciamento)
+20. E-mail Marketing
+21. Gestão de Ideias
+22. Busca Global
+23. Extras e Configurações
+24. Aplicativo Mobile
+25. Painel Administrativo e Onboarding de Clientes
 
 ---
 
@@ -52,6 +53,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 
 ## Criação de conteúdo
 - **Assistente de IA + Habilize (Builder)** — criação de cursos com IA e editor visual; exportação HTML/SCORM. → [docs/criador-de-cursos-ia.md](docs/criador-de-cursos-ia.md)
+- **Criador com IA (/criar)** — estúdio que gera banner, notícia, imagem, e-mail, curso, vídeo e apresentação a partir de uma frase. → [docs/criador-com-ia.md](docs/criador-com-ia.md)
 - **Formulários (NiceForms)** — formulários dinâmicos para pesquisa/avaliação. → [docs/formularios.md](docs/formularios.md)
 - **Páginas customizadas** — páginas de conteúdo montadas pela empresa. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
 - **Taxonomia** — categorização/etiquetagem de conteúdos. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
@@ -91,6 +93,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 ## Plataformas e bastidor
 - **App mobile** — aplicativo do aluno (iOS/Android), com modo offline. → [docs/app-mobile.md](docs/app-mobile.md)
 - **Painel administrativo / Onboarding de clientes** — bastidor da equipe Endoo. → [docs/admin-onboarding.md](docs/admin-onboarding.md)
+- **Conector MCP** — a plataforma como conector de leitura para assistentes de IA. → [docs/arquitetura-ecossistema.md](docs/arquitetura-ecossistema.md)
 - **Páginas dinâmicas** — renderização de páginas/rotas dinâmicas. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
 
 ## Específicos / customizados
@@ -117,6 +120,7 @@ Plataforma corporativa de educação/treinamento (LMS) com forte camada de **int
 - **habilize-builder** — Editor visual de cursos (o "construtor"). Aplicação separada, embutida na principal quando se cria/edita um curso.
 - **loja-endoo** — Site de vitrine/checkout (marketing + venda de planos/cursos por fora da plataforma).
 - **landings** — Páginas de captação.
+- **Conector MCP** — serviço que expõe a plataforma como **conector de leitura para assistentes de IA** (ex: Claude): dezenas de consultas somente-leitura (usuários, cursos, trilhas, relatórios, gamificação, wiki), com login próprio e isolamento por cliente. Também alimenta a área de Insights do Criador com IA.
 
 ## Conceitos-chave
 - **Site / inquilino:** cada cliente é isolado. Quase tudo é filtrado por site automaticamente.
@@ -261,7 +265,7 @@ Instrutores podem **importar participantes** em massa por planilha, sem inscriç
 Ao entrar no curso, o aluno vê os capítulos em ordem; ao abrir um capítulo, consome as tarefas na sequência. Cada tarefa é marcada como concluída (manual ou automaticamente, conforme o tipo).
 
 ### Controle de ritmo
-- **Tempo mínimo por atividade:** cada tarefa pode exigir um tempo mínimo de permanência. Enquanto ele não é cumprido, aparece uma contagem regressiva e o botão de avançar fica bloqueado — o aluno não pula o conteúdo.
+- **Tempo mínimo por atividade:** cada tarefa pode exigir um tempo mínimo de permanência. Enquanto ele não é cumprido, aparece uma contagem regressiva e o botão de avançar fica bloqueado — o aluno não pula o conteúdo. Em vídeos, quando o tempo mínimo é "Nenhum", o aluno pode avançar a barra livremente.
 - **Liberação sequencial:** a próxima tarefa só é habilitada quando a anterior é concluída.
 - **Configurações de atenção:** o curso pode exibir o cronômetro durante a aula e pausar o vídeo quando o aluno troca de aba.
 
@@ -291,7 +295,7 @@ Para avaliação **prática ou situacional**, além da prova objetiva o curso po
 ## Certificações
 Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo.
 
-**Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão e carga horária.
+**Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão, carga horária e **conteúdo programático** (a grade do que foi cursado).
 
 **Autenticidade e verificação:**
 - Cada emissão gera um **código único** de validação.
@@ -353,6 +357,9 @@ Uma **jornada** é a versão visual e gamificada, voltada a engajamento (não a 
 ## Gestão
 Administradores criam/editam essas estruturas, definem a ordem dos cursos, datas e vagas, importam participantes em lote, e acompanham relatórios: quantos estão em cada trilha, taxa de conclusão, tempo médio, desempenho e abandono.
 
+## Sequência obrigatória
+A trilha pode exigir que os cursos sejam feitos **na ordem** (opção configurável): o próximo só libera quando o anterior conclui.
+
 ## Criação automática de turmas
 Para os cursos que compõem a trilha, a plataforma consegue **criar as turmas necessárias automaticamente, em um clique** — sem o admin abrir curso por curso. Agiliza a preparação de uma trilha grande, garantindo que todos os cursos fiquem disponíveis para os participantes.
 
@@ -400,6 +407,55 @@ A plataforma também **reproduz** pacotes SCORM (roda o conteúdo e salva o prog
 
 ---
 *Migalha (para quem tem o código): assistente no app principal; agentes e geração no serviço de IA; editor é a aplicação Habilize embutida via iframe. Última revisão: jun/2026.*
+
+
+---
+
+# Criador com IA (/criar)
+
+> Estúdio de criação da plataforma: a pessoa descreve em uma frase o que quer e a IA gera a peça inteira — banner, notícia, imagem, e-mail, curso, vídeo ou apresentação — para revisar, ajustar e publicar.
+
+## Em uma frase
+Um espaço único ("Criar com IA") onde comunicação e treinamento nascem de um pedido em linguagem natural, com a identidade visual da empresa aplicada automaticamente.
+
+## O que ele cria
+| Peça | O que sai | Destino |
+|---|---|---|
+| **Banner** | Arte pronta com texto e imagem | Publica na plataforma |
+| **Notícia** | Matéria completa (título, texto, capa) | Publica no blog/feed |
+| **Imagem** | Versões de imagem geradas por IA | Biblioteca de imagens |
+| **Curso** | Curso multi-página com atividades | Publica no LMS, ou exporta SCORM/HTML |
+| **E-mail** | Peça de e-mail marketing | Salva direto nos Envios |
+| **Vídeo** | Roteiro em cenas → vídeo animado | Render em MP4 |
+| **Apresentação (slides)** | Deck completo (capa, tópicos, números, tabela, citação) | Exporta PDF ou PPTX |
+
+## Como funciona a criação
+1. **Pedido em uma frase** — ex: "apresentação para as lideranças sobre o programa de reconhecimento".
+2. **A IA gera a peça inteira**, já com a marca da empresa (cores, logo, fonte, tom de voz configurados).
+3. **Refino por chat ou à mão** — a pessoa conversa com a IA para ajustar, ou edita diretamente os textos na própria peça (clicando neles).
+4. **Publica ou exporta** no destino da peça.
+
+## Recursos por peça
+- **Apresentações:** vários templates visuais (claro, escuro, editorial, marca, grade); trocar template nunca perde o conteúdo; régua de miniaturas com reordenação por arraste; edição de texto direto no slide; exporta PDF e PPTX (com formas e notas reais, editáveis no PowerPoint).
+- **Vídeo:** roteiro em cenas (apresentador/tela), composição animada com templates, prévia navegável e render final em MP4.
+- **Curso:** mesmo motor do editor de cursos, com kits visuais; publica direto como curso da plataforma.
+- **E-mail:** montado em formato compatível com clientes de e-mail e salvo nos Envios (e-mail marketing).
+
+## Marca e agentes (configuração)
+- **Marca:** cores, logo, fonte (inclusive fonte própria), imagens de referência, site (vira guia de estilo) e tom de voz — tudo aplicado automaticamente nas criações.
+- **Agentes:** assistentes autônomos com papéis (Editor, Instrutor, Curador) e sugestões de criação.
+
+## Biblioteca
+Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (vídeo tocando, apresentação folheável), busca e filtro por tipo. Cursos têm uma visão própria com status.
+
+## Insights
+Área de análise conversacional: a pessoa pergunta sobre os dados da plataforma e a IA responde consultando os dados reais (via o conector de dados da plataforma), com gráficos.
+
+## Consumo de IA visível
+O uso de IA é medido em tokens; o **saldo aparece como um anel em volta do avatar** do usuário, e o admin controla **em quais áreas a IA fica habilitada**. Recursos de IA adicionais aparecem numa vitrine própria conforme o plano contratado.
+
+---
+*Última revisão: set/2026.*
 
 
 ---
@@ -456,6 +512,7 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Quem usa:** alunos durante o curso.
 - **O que faz:** o aluno pergunta sobre o curso; a IA busca semanticamente em três fontes (conteúdo do curso, biblioteca e wiki) e gera uma resposta contextualizada. Toda interação é registrada para análise posterior.
 - **Escopo da busca:** a tela indica em que material a resposta se baseou e permite **ampliar a busca a todos os materiais** (não só o curso atual).
+- **Sugestões:** a resposta traz **chips de perguntas sugeridas** e expansão do conteúdo na própria bolha da conversa.
 
 ## 3. Relatório da Central de Dúvidas
 - **Quem usa:** admins / coordenadores.
@@ -837,6 +894,7 @@ Enquanto o menu entrega **dashboards** (gráficos na tela), o Painel de Relatór
 - **Acessos em páginas** — quais páginas foram acessadas.
 - **Lista de presença** — presença registrada.
 - **Social** — engajamento na rede social (posts, interações).
+- **Notícias** — desempenho das publicações (leituras, interações).
 - **Usuários com permissões individuais** — lista quem tem permissões concedidas individualmente (fora dos grupos), para revisão de acessos.
 
 ### Catálogo — Questionários *(escolhe-se um formulário)*
@@ -962,6 +1020,9 @@ Família de dashboards que responde "quem deveria fazer, quem fez".
 - **Serve para:** achar as lacunas da base de conhecimento — o que os alunos perguntam e a IA não responde bem.
 
 ---
+
+## Comunicação
+- **Dashboard de Comunicação** — visão geral do alcance da comunicação interna, com **comparativo das notícias de maior alcance**.
 
 ## Acessos
 
@@ -1094,6 +1155,9 @@ Reconhece e exibe ícone para imagem (JPG/PNG/GIF), PDF, texto, documentos Offic
 - **Controla download por arquivo** — liberado para baixar ou apenas visualização (ex: vídeos de aula, documentos sensíveis).
 - **Exclui** arquivos e **ordena** por data, nome ou tipo.
 
+## Indexação para a IA
+Os arquivos passam por **extração de conteúdo** para alimentar a busca e as respostas de IA. Cada arquivo mostra o **status da extração**, e o admin pode **reprocessar manualmente** um arquivo. Na busca, o resultado traz o **link da pasta** onde o arquivo está.
+
 ## Onde é usada
 - **Galeria de eventos** — fotos que aparecem na página do evento.
 - **Materiais de curso** — arquivos vinculados a aulas, acessados no contexto do curso.
@@ -1130,7 +1194,7 @@ Organizado por funcionalidade:
 
 **Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário).
 
-**IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos.
+**IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos. O admin também escolhe **em quais áreas da plataforma a IA fica habilitada**; o **saldo de tokens de IA** aparece para o usuário como um anel em volta do avatar, e recursos adicionais aparecem numa vitrine conforme o plano.
 
 **Integração com APIs** — vincula remetente de e-mail, conecta WhatsApp e configura integrações.
 

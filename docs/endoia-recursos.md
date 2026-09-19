@@ -15,6 +15,7 @@ A IA da plataforma roda num serviço próprio que orquestra "agentes" especializ
 - **Quem usa:** alunos durante o curso.
 - **O que faz:** o aluno pergunta sobre o curso; a IA busca semanticamente em três fontes (conteúdo do curso, biblioteca e wiki) e gera uma resposta contextualizada. Toda interação é registrada para análise posterior.
 - **Escopo da busca:** a tela indica em que material a resposta se baseou e permite **ampliar a busca a todos os materiais** (não só o curso atual).
+- **Sugestões:** a resposta traz **chips de perguntas sugeridas** e expansão do conteúdo na própria bolha da conversa.
 
 ## 3. Relatório da Central de Dúvidas
 - **Quem usa:** admins / coordenadores.

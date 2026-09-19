@@ -18,6 +18,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 
 ## Criação de conteúdo
 - **Assistente de IA + Habilize (Builder)** — criação de cursos com IA e editor visual; exportação HTML/SCORM. → [docs/criador-de-cursos-ia.md](docs/criador-de-cursos-ia.md)
+- **Criador com IA (/criar)** — estúdio que gera banner, notícia, imagem, e-mail, curso, vídeo e apresentação a partir de uma frase. → [docs/criador-com-ia.md](docs/criador-com-ia.md)
 - **Formulários (NiceForms)** — formulários dinâmicos para pesquisa/avaliação. → [docs/formularios.md](docs/formularios.md)
 - **Páginas customizadas** — páginas de conteúdo montadas pela empresa. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
 - **Taxonomia** — categorização/etiquetagem de conteúdos. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
@@ -57,6 +58,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 ## Plataformas e bastidor
 - **App mobile** — aplicativo do aluno (iOS/Android), com modo offline. → [docs/app-mobile.md](docs/app-mobile.md)
 - **Painel administrativo / Onboarding de clientes** — bastidor da equipe Endoo. → [docs/admin-onboarding.md](docs/admin-onboarding.md)
+- **Conector MCP** — a plataforma como conector de leitura para assistentes de IA. → [docs/arquitetura-ecossistema.md](docs/arquitetura-ecossistema.md)
 - **Páginas dinâmicas** — renderização de páginas/rotas dinâmicas. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
 
 ## Específicos / customizados

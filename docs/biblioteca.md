@@ -25,6 +25,9 @@ Reconhece e exibe ícone para imagem (JPG/PNG/GIF), PDF, texto, documentos Offic
 - **Controla download por arquivo** — liberado para baixar ou apenas visualização (ex: vídeos de aula, documentos sensíveis).
 - **Exclui** arquivos e **ordena** por data, nome ou tipo.
 
+## Indexação para a IA
+Os arquivos passam por **extração de conteúdo** para alimentar a busca e as respostas de IA. Cada arquivo mostra o **status da extração**, e o admin pode **reprocessar manualmente** um arquivo. Na busca, o resultado traz o **link da pasta** onde o arquivo está.
+
 ## Onde é usada
 - **Galeria de eventos** — fotos que aparecem na página do evento.
 - **Materiais de curso** — arquivos vinculados a aulas, acessados no contexto do curso.

@@ -48,7 +48,7 @@ Instrutores podem **importar participantes** em massa por planilha, sem inscriç
 Ao entrar no curso, o aluno vê os capítulos em ordem; ao abrir um capítulo, consome as tarefas na sequência. Cada tarefa é marcada como concluída (manual ou automaticamente, conforme o tipo).
 
 ### Controle de ritmo
-- **Tempo mínimo por atividade:** cada tarefa pode exigir um tempo mínimo de permanência. Enquanto ele não é cumprido, aparece uma contagem regressiva e o botão de avançar fica bloqueado — o aluno não pula o conteúdo.
+- **Tempo mínimo por atividade:** cada tarefa pode exigir um tempo mínimo de permanência. Enquanto ele não é cumprido, aparece uma contagem regressiva e o botão de avançar fica bloqueado — o aluno não pula o conteúdo. Em vídeos, quando o tempo mínimo é "Nenhum", o aluno pode avançar a barra livremente.
 - **Liberação sequencial:** a próxima tarefa só é habilitada quando a anterior é concluída.
 - **Configurações de atenção:** o curso pode exibir o cronômetro durante a aula e pausar o vídeo quando o aluno troca de aba.
 
@@ -78,7 +78,7 @@ Para avaliação **prática ou situacional**, além da prova objetiva o curso po
 ## Certificações
 Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo.
 
-**Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão e carga horária.
+**Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão, carga horária e **conteúdo programático** (a grade do que foi cursado).
 
 **Autenticidade e verificação:**
 - Cada emissão gera um **código único** de validação.

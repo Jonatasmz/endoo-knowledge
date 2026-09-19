@@ -13,6 +13,7 @@ Plataforma corporativa de educação/treinamento (LMS) com forte camada de **int
 - **habilize-builder** — Editor visual de cursos (o "construtor"). Aplicação separada, embutida na principal quando se cria/edita um curso.
 - **loja-endoo** — Site de vitrine/checkout (marketing + venda de planos/cursos por fora da plataforma).
 - **landings** — Páginas de captação.
+- **Conector MCP** — serviço que expõe a plataforma como **conector de leitura para assistentes de IA** (ex: Claude): dezenas de consultas somente-leitura (usuários, cursos, trilhas, relatórios, gamificação, wiki), com login próprio e isolamento por cliente. Também alimenta a área de Insights do Criador com IA.
 
 ## Conceitos-chave
 - **Site / inquilino:** cada cliente é isolado. Quase tudo é filtrado por site automaticamente.

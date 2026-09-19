@@ -40,6 +40,9 @@ Uma **jornada** é a versão visual e gamificada, voltada a engajamento (não a 
 ## Gestão
 Administradores criam/editam essas estruturas, definem a ordem dos cursos, datas e vagas, importam participantes em lote, e acompanham relatórios: quantos estão em cada trilha, taxa de conclusão, tempo médio, desempenho e abandono.
 
+## Sequência obrigatória
+A trilha pode exigir que os cursos sejam feitos **na ordem** (opção configurável): o próximo só libera quando o anterior conclui.
+
 ## Criação automática de turmas
 Para os cursos que compõem a trilha, a plataforma consegue **criar as turmas necessárias automaticamente, em um clique** — sem o admin abrir curso por curso. Agiliza a preparação de uma trilha grande, garantindo que todos os cursos fiquem disponíveis para os participantes.
 

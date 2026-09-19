@@ -69,6 +69,7 @@ Enquanto o menu entrega **dashboards** (gráficos na tela), o Painel de Relatór
 - **Acessos em páginas** — quais páginas foram acessadas.
 - **Lista de presença** — presença registrada.
 - **Social** — engajamento na rede social (posts, interações).
+- **Notícias** — desempenho das publicações (leituras, interações).
 - **Usuários com permissões individuais** — lista quem tem permissões concedidas individualmente (fora dos grupos), para revisão de acessos.
 
 ### Catálogo — Questionários *(escolhe-se um formulário)*
@@ -194,6 +195,9 @@ Família de dashboards que responde "quem deveria fazer, quem fez".
 - **Serve para:** achar as lacunas da base de conhecimento — o que os alunos perguntam e a IA não responde bem.
 
 ---
+
+## Comunicação
+- **Dashboard de Comunicação** — visão geral do alcance da comunicação interna, com **comparativo das notícias de maior alcance**.
 
 ## Acessos
 
