@@ -681,7 +681,7 @@ O aluno resgata; a plataforma cria o resgate já como **entregue**, debita os po
 ### Gift card Incentivale (assíncrono)
 Ao resgatar um item Incentivale, o aluno confirma **CPF/CNPJ** e **aceita os termos**. A plataforma gera um código de pedido próprio, chama a API da Incentivale e cria o resgate como **pendente**, guardando o código do pedido e o código de transação da Incentivale. Os pontos são debitados na hora. O CPF/CNPJ informado **não é armazenado** — só trafega para a Incentivale no pedido. Depois, o status é acompanhado por consulta ao pedido: quando a Incentivale marca como entregue, o código do gift card fica disponível para o aluno.
 
-O tipo de produto Incentivale define o endpoint usado no pedido: cartão virtual (padrão), crédito em conta, pagamento de contas ou recarga de celular.
+O tipo de produto Incentivale define como o pedido é feito ao parceiro: cartão virtual (padrão), crédito em conta, pagamento de contas ou recarga de celular.
 
 **Estados de um resgate:** pendente (aguardando entrega — típico da Incentivale), entregue, expirado.
 
