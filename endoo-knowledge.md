@@ -13,23 +13,24 @@
 6. Trilhas e Jornadas de Aprendizado
 7. Construtor de Cursos com IA + Editor Habilize
 8. Criador com IA (/criar)
-9. Matriz de Treinamento
-10. Recursos de Inteligência Artificial (EndoIA)
-11. Gamificação, Campanhas e Loja de Prêmios
-12. Comunicação e Social
-13. Base de Conhecimento (Wiki)
-14. Formulários (NiceForms)
-15. Tours Guiados de Onboarding
-16. Relatórios e Analytics
-17. Eventos, Presença e Calendário
-18. Biblioteca (Repositório de Arquivos)
-19. Central de Administração (Gerenciamento)
-20. E-mail Marketing
-21. Gestão de Ideias
-22. Busca Global
-23. Extras e Configurações
-24. Aplicativo Mobile
-25. Painel Administrativo e Onboarding de Clientes
+9. App IA (plano IA)
+10. Matriz de Treinamento
+11. Recursos de Inteligência Artificial (EndoIA)
+12. Gamificação, Campanhas e Loja de Prêmios
+13. Comunicação e Social
+14. Base de Conhecimento (Wiki)
+15. Formulários (NiceForms)
+16. Tours Guiados de Onboarding
+17. Relatórios e Analytics
+18. Eventos, Presença e Calendário
+19. Biblioteca (Repositório de Arquivos)
+20. Central de Administração (Gerenciamento)
+21. E-mail Marketing
+22. Gestão de Ideias
+23. Busca Global
+24. Extras e Configurações
+25. Aplicativo Mobile
+26. Painel Administrativo e Onboarding de Clientes
 
 ---
 
@@ -54,6 +55,7 @@ Itens marcados **(sem doc dedicado)** ainda só existem neste índice — peça 
 ## Criação de conteúdo
 - **Assistente de IA + Habilize (Builder)** — criação de cursos com IA e editor visual; exportação HTML/SCORM. → [docs/criador-de-cursos-ia.md](docs/criador-de-cursos-ia.md)
 - **Criador com IA (/criar)** — estúdio que gera banner, notícia, imagem, e-mail, curso, vídeo e apresentação a partir de uma frase. → [docs/criador-com-ia.md](docs/criador-com-ia.md)
+- **App IA** — acesso e plano próprios para clientes só do plano IA (cadastro, tokens, faturas, pacotes extras). → [docs/app-ia.md](docs/app-ia.md)
 - **Formulários (NiceForms)** — formulários dinâmicos para pesquisa/avaliação. → [docs/formularios.md](docs/formularios.md)
 - **Páginas customizadas** — páginas de conteúdo montadas pela empresa. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
 - **Taxonomia** — categorização/etiquetagem de conteúdos. → [docs/extras-e-configuracoes.md](docs/extras-e-configuracoes.md)
@@ -285,7 +287,7 @@ Existe um banco de avaliações — questionários parametrizáveis que podem vi
 - **Nota mínima** de aprovação, que define aprovado/reprovado.
 - **Versões** (ex: prova original e reteste).
 
-Cada tentativa é registrada por aluno, com **as respostas dadas, a nota e a data/hora**. Quem reprova pode refazer conforme o instrutor permitir.
+A prova é exibida **uma questão por vez**, com barra de progresso por segmentos — no preview do instrutor e para o aluno. Cada tentativa é registrada por aluno, com **as respostas dadas, a nota e a data/hora**. Quem reprova pode refazer conforme o instrutor permitir.
 
 Para avaliação **prática ou situacional**, além da prova objetiva o curso pode usar tarefas de:
 - **Envio de arquivo** — o aluno entrega um trabalho.
@@ -435,27 +437,64 @@ Um espaço único ("Criar com IA") onde comunicação e treinamento nascem de um
 3. **Refino por chat ou à mão** — a pessoa conversa com a IA para ajustar, ou edita diretamente os textos na própria peça (clicando neles).
 4. **Publica ou exporta** no destino da peça.
 
+## O maestro (ajuste por conversa)
+Toda peça aberta tem um assistente de ajustes: a pessoa pede a mudança em português ("troca a foto da cena 2", "deixa o título mais direto") e a peça é alterada na hora — a tela já abre no ponto que mudou. Reabrir a conversa retoma de onde parou.
+
 ## Recursos por peça
-- **Apresentações:** vários templates visuais (claro, escuro, editorial, marca, grade); trocar template nunca perde o conteúdo; régua de miniaturas com reordenação por arraste; edição de texto direto no slide; exporta PDF e PPTX (com formas e notas reais, editáveis no PowerPoint).
-- **Vídeo:** roteiro em cenas (apresentador/tela), composição animada com templates, prévia navegável e render final em MP4.
-- **Curso:** mesmo motor do editor de cursos, com kits visuais; publica direto como curso da plataforma.
+- **Apresentações:** vários templates visuais (claro, escuro, editorial, marca, grade); trocar template nunca perde o conteúdo; régua de miniaturas com reordenação por arraste; edição de texto direto no slide; **busca de fotos para os slides**; exporta PDF e PPTX (com formas e notas reais, editáveis no PowerPoint).
+- **Vídeo:** roteiro em cenas com **12 modelos de cena**, clima/tom/movimento por cena, **direção de arte automática** (a IA escolhe as melhores fotos para cada cena) e **locução gerada por IA**; prévia navegável e render final em MP4.
+- **Curso:** mesmo motor do editor de cursos, com kits visuais; **checklist do conteúdo editável** antes de gerar; a geração avisa página a página; publica direto como curso da plataforma.
 - **E-mail:** montado em formato compatível com clientes de e-mail e salvo nos Envios (e-mail marketing).
+- **Banner e arte:** gera **várias opções da arte** de uma vez, usando **o logo e o grafismo da marca como referência**; cada versão guarda a própria prévia, e o ajuste parte da arte atual.
+- **Imagens:** além da geração por IA, há um **banco de imagens gratuitas** integrado.
 
 ## Marca e agentes (configuração)
-- **Marca:** cores, logo, fonte (inclusive fonte própria), imagens de referência, site (vira guia de estilo) e tom de voz — tudo aplicado automaticamente nas criações.
-- **Agentes:** assistentes autônomos com papéis (Editor, Instrutor, Curador) e sugestões de criação.
+- **Marca:** cores, logo, fonte (inclusive fonte própria), imagens de referência, site (vira guia de estilo) e tom de voz — tudo aplicado automaticamente nas criações. A empresa pode ter **mais de uma identidade de marca**, e o Criador **aprende com o histórico de cada identidade** separadamente.
+- **Agentes:** assistentes autônomos com papéis (Editor, Instrutor, Curador), sugestões de criação e um **painel com dados reais da plataforma**: nota geral da plataforma, atrasados nos cursos obrigatórios, sinais de comunicação (alcance das publicações), lembretes do instrutor e a pauta da semana.
 
-## Biblioteca
-Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (vídeo tocando, apresentação folheável), busca e filtro por tipo. Cursos têm uma visão própria com status.
+## Biblioteca e Acervo
+Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (vídeo tocando, apresentação folheável), busca e filtro por tipo. Cursos têm uma visão própria com status. O **Acervo** organiza as mídias em **pastas por conversa/projeto** — imagem anexada numa conversa já entra na pasta dela.
 
 ## Insights
 Área de análise conversacional: a pessoa pergunta sobre os dados da plataforma e a IA responde consultando os dados reais (via o conector de dados da plataforma), com gráficos.
 
 ## Consumo de IA visível
-O uso de IA é medido em tokens; o **saldo aparece como um anel em volta do avatar** do usuário, e o admin controla **em quais áreas a IA fica habilitada**. Recursos de IA adicionais aparecem numa vitrine própria conforme o plano contratado.
+O uso de IA é medido em tokens; o **saldo aparece como um anel em volta do avatar** do usuário, há **consumo detalhado por conversa**, e o admin controla **em quais áreas a IA fica habilitada**. Recursos de IA adicionais aparecem numa vitrine própria conforme o plano contratado. Clientes só do plano IA usam o **App IA** (ver `app-ia.md`).
+
+## Feedback integrado
+Um botão **Reportar** em qualquer tela do Criador envia o problema/sugestão direto para o time do Endoo, já com o contexto da conversa — vira um chamado automaticamente.
 
 ---
 *Última revisão: set/2026.*
+
+
+---
+
+# App IA (plano IA)
+
+> Porta de entrada própria para quem contrata só o plano de IA: cadastro, login e gestão do plano num endereço único.
+
+## O que é
+Para clientes do **plano IA** (que usam o Criador com IA sem o restante da plataforma), existe um acesso dedicado em endereço próprio, com visual simplificado e foco total na criação.
+
+## Conta e acesso
+- **Cadastro e login únicos** — a pessoa cria a conta e entra sempre pelo mesmo lugar.
+- **Login com Google** e **login em dois passos** (confirmação por código).
+- **Recuperação de senha** no mesmo fluxo.
+- Ao entrar pela primeira vez, um **onboarding guiado** apresenta o Criador com IA.
+
+## Aba Plano
+Autoatendimento do plano contratado:
+- **Plano atual** e preços em reais.
+- **Tokens do mês** — quanto o plano inclui e quanto já foi consumido.
+- **Pacotes adicionais** — compra de saldo extra de tokens quando o mês aperta; o saldo extra é consumido depois do saldo do plano.
+- **Histórico de faturas**.
+
+## Relação com a plataforma completa
+O App IA é o mesmo Criador com IA da plataforma, embalado como produto independente. Se o cliente evoluir para a plataforma completa (LMS, comunicação, gamificação), a conta e as criações seguem juntas.
+
+---
+*Última revisão: out/2026.*
 
 
 ---
@@ -1192,11 +1231,11 @@ Organizado por funcionalidade:
 - **Dúvidas (Q&A):** restringe a visibilidade às pessoas da mesma turma/hierarquia.
 - **Notificações em tempo real:** liga avisos instantâneos (sem precisar recarregar).
 
-**Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário).
+**Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário). Há também um **resumo semanal por e-mail** com o que aconteceu na plataforma, e as notificações da plataforma vêm **ativadas por padrão**.
 
 **IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos. O admin também escolhe **em quais áreas da plataforma a IA fica habilitada**; o **saldo de tokens de IA** aparece para o usuário como um anel em volta do avatar, e recursos adicionais aparecem numa vitrine conforme o plano.
 
-**Integração com APIs** — vincula remetente de e-mail, conecta WhatsApp e configura integrações.
+**Integração com APIs** — vincula remetente de e-mail (inclusive **remetente próprio da empresa, verificado**, e modelo de e-mail customizado), conecta WhatsApp e configura integrações.
 
 > Boa parte das configurações daqui se reflete em outros módulos (cursos, social, IA, relatórios) — esta é a central que liga e regula tudo.
 

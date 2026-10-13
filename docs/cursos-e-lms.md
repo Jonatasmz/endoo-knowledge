@@ -68,7 +68,7 @@ Existe um banco de avaliações — questionários parametrizáveis que podem vi
 - **Nota mínima** de aprovação, que define aprovado/reprovado.
 - **Versões** (ex: prova original e reteste).
 
-Cada tentativa é registrada por aluno, com **as respostas dadas, a nota e a data/hora**. Quem reprova pode refazer conforme o instrutor permitir.
+A prova é exibida **uma questão por vez**, com barra de progresso por segmentos — no preview do instrutor e para o aluno. Cada tentativa é registrada por aluno, com **as respostas dadas, a nota e a data/hora**. Quem reprova pode refazer conforme o instrutor permitir.
 
 Para avaliação **prática ou situacional**, além da prova objetiva o curso pode usar tarefas de:
 - **Envio de arquivo** — o aluno entrega um trabalho.

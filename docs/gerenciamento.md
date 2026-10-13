@@ -21,11 +21,11 @@ Organizado por funcionalidade:
 - **Dúvidas (Q&A):** restringe a visibilidade às pessoas da mesma turma/hierarquia.
 - **Notificações em tempo real:** liga avisos instantâneos (sem precisar recarregar).
 
-**Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário).
+**Notificações configuráveis** — para cada evento (novo curso, prazo se aproximando, nova notícia, aniversário, etc.): ativar/desativar, escolher canais (plataforma, e-mail, WhatsApp), configurar lembretes em dias específicos antes do prazo e o modo de entrega (instantâneo ou resumo diário). Há também um **resumo semanal por e-mail** com o que aconteceu na plataforma, e as notificações da plataforma vêm **ativadas por padrão**.
 
 **IA e conhecimento** — define quais fontes a IA usa (cursos ativos, biblioteca, wiki/Central de Dúvidas), mostra o status de indexação (quantos itens já processados/pendentes) e permite a aprendizagem automática de novos conteúdos. O admin também escolhe **em quais áreas da plataforma a IA fica habilitada**; o **saldo de tokens de IA** aparece para o usuário como um anel em volta do avatar, e recursos adicionais aparecem numa vitrine conforme o plano.
 
-**Integração com APIs** — vincula remetente de e-mail, conecta WhatsApp e configura integrações.
+**Integração com APIs** — vincula remetente de e-mail (inclusive **remetente próprio da empresa, verificado**, e modelo de e-mail customizado), conecta WhatsApp e configura integrações.
 
 > Boa parte das configurações daqui se reflete em outros módulos (cursos, social, IA, relatórios) — esta é a central que liga e regula tudo.
 
