@@ -19,6 +19,8 @@ Reconhece e exibe ícone para imagem (JPG/PNG/GIF), PDF, texto, documentos Offic
 - **Baixa** arquivos liberados (alguns podem ser só visualização, por configuração do admin).
 - Materiais vinculados a um curso aparecem na própria página do curso.
 
+> A plataforma tem um **componente de envio de arquivos padronizado** (arrastar ou escolher, com progresso) usado em várias telas, e uma **visualização de mídia** renovada para imagens e vídeos.
+
 ## Para o admin
 - **Cria pastas** e faz **upload** de arquivos (com barra de progresso).
 - **Move**, **renomeia** e **edita** descrição dos arquivos.

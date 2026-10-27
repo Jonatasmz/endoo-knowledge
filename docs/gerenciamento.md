@@ -8,6 +8,7 @@ Tela inicial com:
 - **Integrações** — status das conexões externas (e-mail, WhatsApp, etc.).
 - **Atalhos** para as principais operações administrativas.
 - **Uso de IA** — resumo de buscas e perguntas no assistente.
+- **Nota da plataforma** — índice geral de saúde da plataforma (engajamento, conclusão, avaliação).
 
 ## Menu de gerenciamento
 Organizado por funcionalidade:

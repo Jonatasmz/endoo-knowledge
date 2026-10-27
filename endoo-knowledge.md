@@ -188,7 +188,7 @@ A plataforma pode **inativar automaticamente** usuários que ficam muito tempo s
 - O usuário tem status (ativo/inativo) e credenciais de acesso.
 - **Não há auto-cadastro público aberto.** Usuários são criados por um dos caminhos:
   - Criação pelo admin (individual);
-  - Importação em massa por planilha (CSV);
+  - Importação em massa por planilha (CSV), com **log de importação** (o que entrou e o que falhou);
   - Login único externo (SSO) integrado ao sistema do cliente.
 - **Login:** por usuário e senha, com variações (ex: ativar o usuário no primeiro acesso). A sessão é autenticada por token.
 
@@ -295,7 +295,7 @@ Para avaliação **prática ou situacional**, além da prova objetiva o curso po
 - **Atividades dos cursos interativos** — os cursos criados no editor visual têm quizzes e avaliações próprios, com registro de tentativas.
 
 ## Certificações
-Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo.
+Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo — inclusive **direto da sua tabela de notas/histórico (Minha performance), curso a curso**.
 
 **Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão, carga horária e **conteúdo programático** (a grade do que foi cursado).
 
@@ -441,19 +441,23 @@ Um espaço único ("Criar com IA") onde comunicação e treinamento nascem de um
 Toda peça aberta tem um assistente de ajustes: a pessoa pede a mudança em português ("troca a foto da cena 2", "deixa o título mais direto") e a peça é alterada na hora — a tela já abre no ponto que mudou. Reabrir a conversa retoma de onde parou.
 
 ## Recursos por peça
-- **Apresentações:** vários templates visuais (claro, escuro, editorial, marca, grade); trocar template nunca perde o conteúdo; régua de miniaturas com reordenação por arraste; edição de texto direto no slide; **busca de fotos para os slides**; exporta PDF e PPTX (com formas e notas reais, editáveis no PowerPoint).
-- **Vídeo:** roteiro em cenas com **12 modelos de cena**, clima/tom/movimento por cena, **direção de arte automática** (a IA escolhe as melhores fotos para cada cena) e **locução gerada por IA**; prévia navegável e render final em MP4.
-- **Curso:** mesmo motor do editor de cursos, com kits visuais; **checklist do conteúdo editável** antes de gerar; a geração avisa página a página; publica direto como curso da plataforma.
+- **Apresentações:** mesmo fluxo do vídeo — **roteiro editável → etapa Modelo → slides em blocos**; vários templates visuais (claro, escuro, editorial, marca, grade); trocar template nunca perde o conteúdo; **personagem ilustrado por IA** nos slides; régua de miniaturas com reordenação por arraste; textos do slide editáveis, movíveis e redimensionáveis; **busca de fotos para os slides**; exporta PDF e PPTX (com formas e notas reais, editáveis no PowerPoint).
+- **Vídeo:** roteiro em cenas (gerado pela IA ou trazido pronto — atalho "já tenho roteiro"), **editável antes de aprovar**, com imagem de cada cena; depois uma **etapa Modelo**, onde tema e modelo de cada cena são escolhidos **vendo a própria prévia** (o vídeo já nasce no tema recomendado para o objetivo); **12 modelos de cena**, clima/tom/movimento por cena, **direção de arte automática** e **locução gerada por IA**; render final em MP4.
+- **Curso:** **guiado pelo objetivo**, com **modelos de curso** e ferramentas interativas; plano/checklist do conteúdo editável antes de gerar (com rascunho visual); a geração avisa página a página; botão **Revisar** faz a revisão completa do curso; editor com seções, colunas e espaçamento ajustável, blocos de **PDF** e **slides prontos**, fundo editável na abertura; quizzes com feedback de certo/errado e explicação; publica direto como curso da plataforma.
 - **E-mail:** montado em formato compatível com clientes de e-mail e salvo nos Envios (e-mail marketing).
-- **Banner e arte:** gera **várias opções da arte** de uma vez, usando **o logo e o grafismo da marca como referência**; cada versão guarda a própria prévia, e o ajuste parte da arte atual.
-- **Imagens:** além da geração por IA, há um **banco de imagens gratuitas** integrado.
+- **Banner e arte:** gera **várias opções da arte** de uma vez, usando **o logo e o grafismo da marca como referência** (e as referências da marca citadas no pedido); cada versão guarda a própria prévia, e o ajuste parte da arte atual.
+- **Imagens:** **editor em camadas** — textos editáveis, QR Code, logotipo, separar objeto do fundo, versões editáveis; **animar a imagem**; baixar em **alta resolução**; 10 formatos prontos + **formatos personalizados** cadastrados pela empresa; além da geração por IA, há um **banco de imagens gratuitas** integrado.
+
+## Publicar e atualizar
+Banner e notícia publicam direto na plataforma. Se a peça **já publicada** for alterada (à mão ou pelo chat), surge **"Atualizar publicação"** — a mesma peça no ar é atualizada, sem criar outra.
 
 ## Marca e agentes (configuração)
-- **Marca:** cores, logo, fonte (inclusive fonte própria), imagens de referência, site (vira guia de estilo) e tom de voz — tudo aplicado automaticamente nas criações. A empresa pode ter **mais de uma identidade de marca**, e o Criador **aprende com o histórico de cada identidade** separadamente.
+- **Marca:** cores, logo, fonte (inclusive fonte própria), imagens de referência (várias de uma vez), site (vira guia de estilo) e tom de voz — tudo aplicado automaticamente nas criações. A empresa pode ter **mais de uma identidade de marca**, e o Criador **aprende com o histórico de cada identidade** separadamente.
+- **Regras da empresa:** regras de criação definidas pelo cliente (o que pode/não pode, por tipo de peça), respeitadas em toda arte gerada.
 - **Agentes:** assistentes autônomos com papéis (Editor, Instrutor, Curador), sugestões de criação e um **painel com dados reais da plataforma**: nota geral da plataforma, atrasados nos cursos obrigatórios, sinais de comunicação (alcance das publicações), lembretes do instrutor e a pauta da semana.
 
 ## Biblioteca e Acervo
-Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (vídeo tocando, apresentação folheável), busca e filtro por tipo. Cursos têm uma visão própria com status. O **Acervo** organiza as mídias em **pastas por conversa/projeto** — imagem anexada numa conversa já entra na pasta dela.
+Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (vídeo tocando, apresentação folheável), busca e filtro por tipo. Cursos têm uma visão própria com status. Cada card tem menu de ações (renomear, excluir), e as artes da Biblioteca podem ser reaproveitadas pela IA em novos pedidos. O **Acervo** organiza as mídias em **pastas por conversa/projeto** — imagem anexada numa conversa já entra na pasta dela.
 
 ## Insights
 Área de análise conversacional: a pessoa pergunta sobre os dados da plataforma e a IA responde consultando os dados reais (via o conector de dados da plataforma), com gráficos.
@@ -462,10 +466,13 @@ Mural com todas as peças criadas, com selo do tipo em cada card, prévia rica (
 O uso de IA é medido em tokens; o **saldo aparece como um anel em volta do avatar** do usuário, há **consumo detalhado por conversa**, e o admin controla **em quais áreas a IA fica habilitada**. Recursos de IA adicionais aparecem numa vitrine própria conforme o plano contratado. Clientes só do plano IA usam o **App IA** (ver `app-ia.md`).
 
 ## Feedback integrado
-Um botão **Reportar** em qualquer tela do Criador envia o problema/sugestão direto para o time do Endoo, já com o contexto da conversa — vira um chamado automaticamente.
+Um botão **Reportar** em qualquer tela do Criador envia o problema/sugestão direto para o time do Endoo, já com o contexto da conversa — vira um chamado automaticamente. Em **"Meus reports"** a pessoa acompanha o andamento de cada um.
+
+## Experiência
+Modo escuro, barra lateral recolhível, e indicador visual de conversa ainda gerando / pronta para ver.
 
 ---
-*Última revisão: set/2026.*
+*Última revisão: out/2026.*
 
 
 ---
@@ -1188,6 +1195,8 @@ Reconhece e exibe ícone para imagem (JPG/PNG/GIF), PDF, texto, documentos Offic
 - **Baixa** arquivos liberados (alguns podem ser só visualização, por configuração do admin).
 - Materiais vinculados a um curso aparecem na própria página do curso.
 
+> A plataforma tem um **componente de envio de arquivos padronizado** (arrastar ou escolher, com progresso) usado em várias telas, e uma **visualização de mídia** renovada para imagens e vídeos.
+
 ## Para o admin
 - **Cria pastas** e faz **upload** de arquivos (com barra de progresso).
 - **Move**, **renomeia** e **edita** descrição dos arquivos.
@@ -1218,6 +1227,7 @@ Tela inicial com:
 - **Integrações** — status das conexões externas (e-mail, WhatsApp, etc.).
 - **Atalhos** para as principais operações administrativas.
 - **Uso de IA** — resumo de buscas e perguntas no assistente.
+- **Nota da plataforma** — índice geral de saúde da plataforma (engajamento, conclusão, avaliação).
 
 ## Menu de gerenciamento
 Organizado por funcionalidade:

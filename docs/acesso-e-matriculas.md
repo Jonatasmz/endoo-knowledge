@@ -7,7 +7,7 @@
 - O usuário tem status (ativo/inativo) e credenciais de acesso.
 - **Não há auto-cadastro público aberto.** Usuários são criados por um dos caminhos:
   - Criação pelo admin (individual);
-  - Importação em massa por planilha (CSV);
+  - Importação em massa por planilha (CSV), com **log de importação** (o que entrou e o que falhou);
   - Login único externo (SSO) integrado ao sistema do cliente.
 - **Login:** por usuário e senha, com variações (ex: ativar o usuário no primeiro acesso). A sessão é autenticada por token.
 

@@ -76,7 +76,7 @@ Para avaliação **prática ou situacional**, além da prova objetiva o curso po
 - **Atividades dos cursos interativos** — os cursos criados no editor visual têm quizzes e avaliações próprios, com registro de tentativas.
 
 ## Certificações
-Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo.
+Cursos podem ter um **certificado** (modelo personalizável) emitido em **PDF** quando o aluno conclui com aprovação. O aluno baixa e arquiva o arquivo — inclusive **direto da sua tabela de notas/histórico (Minha performance), curso a curso**.
 
 **Campos preenchidos automaticamente no modelo:** nome do aluno, nome do curso, data de conclusão, carga horária e **conteúdo programático** (a grade do que foi cursado).
 
